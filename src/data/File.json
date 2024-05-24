@@ -1,0 +1,62 @@
+{
+  "Invoice": {
+    "Invoice": [
+      {
+        "id": 1,
+        "schoolName": "Example School",
+        "amountDue": "5000",
+        "dueDate": "2024-06-01"
+      },
+      {
+        "id": 2,
+        "schoolName": "Another School",
+        "amountDue": "10000",
+        "dueDate": "2024-07-01"
+      },
+      {
+        "id": 3,
+        "schoolName": "kimayo",
+        "amountDue": "3",
+        "dueDate": "2024-05-23"
+      },
+      {
+        "id": 4,
+        "schoolName": "Nyeri High",
+        "amountDue": "150000",
+        "dueDate": "2024-05-31"
+      },
+      {
+        "id": 5,
+        "schoolName": "evanso",
+        "amountDue": "23444",
+        "dueDate": "2024-05-31"
+      }
+    ]
+  },
+  "Schools": {
+    "Schools": [
+      {
+        "ID": 1,
+        "SchoolName": "Example School",
+        "Collections": 10000,
+        "Type": "Primary",
+        "County": "Example County",
+        "Product": "Standard",
+        "registrationDate": "2024-01-01",
+        "ContactInfo": "123456789",
+        "balance": "5000"
+      },
+      {
+        "ID": 2,
+        "SchoolName": "Another School",
+        "Collections": 20000,
+        "Type": "Secondary",
+        "County": "Another County",
+        "Product": "Premium",
+        "registrationDate": "2024-02-01",
+        "ContactInfo": "987654321",
+        "balance": "10000"
+      }
+    ]
+  }
+}
