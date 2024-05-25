@@ -17,7 +17,7 @@ const SalesBlock = () => {
   const fetchData = async () => {
     try {
       // Fetch data for collections
-      const collectionsResponse = await fetch('http://localhost:3000/schools');
+      const collectionsResponse = await fetch('http://localhost:3000/Schools');
       const collectionsData = await collectionsResponse.json();
       console.log("Hello",collectionsData);
       // Calculate total collections
@@ -25,7 +25,7 @@ const SalesBlock = () => {
       setCollections(totalCollections);
 
       // Fetch data for signups (assuming it's a separate endpoint)
-      const signupsResponse = await fetch('http://localhost:3000/Signups');
+      const signupsResponse = await fetch('http://localhost:3000/Schools');
       const signupsData = await signupsResponse.json();
       setSignups(signupsData.length);
 

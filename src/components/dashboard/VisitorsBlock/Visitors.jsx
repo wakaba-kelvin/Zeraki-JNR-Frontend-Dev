@@ -52,7 +52,7 @@ const VisitorsBlock = () => {
     <VisitorsBlockWrap>
       <div className="block-head">
         <BlockTitle className="block-title">
-          <h3>Visitor Insights</h3>
+          <h3>Zeraki Insights</h3>
         </BlockTitle>
       </div>
       <BlockContentWrap className="line-chart">
@@ -113,21 +113,21 @@ const VisitorsBlock = () => {
               dot={false}
               strokeWidth={4}
               type="basis"
-              dataKey="loyal_customer"
+              dataKey="Zeraki Analytics"
               stroke="#A700FF"
             />
             <Line
               dot={false}
               strokeWidth={4}
               type="basis"
-              dataKey="new_customer"
+              dataKey="Zeraki Finance"
               stroke="#F64E60"
             />
             <Line
               dot={false}
               strokeWidth={4}
               type="basis"
-              dataKey="unique_customer"
+              dataKey="Zeraki Timetable"
               stroke="#3CD856"
             />
           </LineChart>
