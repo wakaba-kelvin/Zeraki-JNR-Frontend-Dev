@@ -4,6 +4,20 @@
   
   button {
     margin-bottom: 20px;
+    background-color: #806677; 
+    border: none;
+    color: rgb(65, 236, 136);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; 
   }
   
   .tbl {
@@ -29,5 +43,17 @@
   
   .tbl tr:hover {
     background-color: #ddd;
+  }
+  
+  .action-buttons button {
+    margin-right: 5px;
+  }
+  
+  .action-buttons button.delete {
+    background-color: #dc3545; 
+  }
+  
+  .action-buttons button.delete:hover {
+    background-color: #c82333; 
   }
   

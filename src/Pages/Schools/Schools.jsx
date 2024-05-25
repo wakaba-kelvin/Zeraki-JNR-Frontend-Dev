@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import AddSchoolModal from '../../components/Modal/AddSchoolModal';
-import SchoolDetailsModal from '../../components/Modal/SchoolDetailsModal';
-import './Schools.css';
+import React, { useState, useEffect } from "react";
+import AddSchoolModal from "../../components/Modal/AddSchoolModal";
+import SchoolDetailsModal from "../../components/Modal/SchoolDetailsModal";
+import "./Schools.css";
 
 const SignupComponent = () => {
   const [isAddSchoolModalOpen, setIsAddSchoolModalOpen] = useState(false);
@@ -15,11 +15,11 @@ const SignupComponent = () => {
 
   const fetchSchools = async () => {
     try {
-      const response = await fetch('http://localhost:3000/Schools');
+      const response = await fetch("http://localhost:3000/Schools");
       const data = await response.json();
       setSchools(data);
     } catch (error) {
-      console.error('Error fetching schools:', error);
+      console.error("Error fetching schools:", error);
     }
   };
 
@@ -40,35 +40,44 @@ const SignupComponent = () => {
     setIsDetailsModalOpen(false);
     setSelectedSchool(null);
   };
+  
 
   const handleSubmitSignup = async (formData) => {
     try {
-      const response = await fetch('http://localhost:3000/Schools', {
-        method: 'POST',
+      const response = await fetch("http://localhost:3000/Schools", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
-        throw new Error('Failed to add new school');
+        throw new Error("Failed to add new school");
       }
 
       const newSchool = await response.json();
       setSchools([...schools, newSchool]);
       handleCloseAddSchoolModal();
     } catch (error) {
-      console.error('Error adding new school:', error);
+      console.error("Error adding new school:", error);
     }
   };
 
   return (
-    <div className='schools'>
+    <div className="schools">
       <button onClick={handleOpenAddSchoolModal}>Add School</button>
-      <AddSchoolModal isOpen={isAddSchoolModalOpen} onClose={handleCloseAddSchoolModal} onSubmit={handleSubmitSignup} />
-      <SchoolDetailsModal isOpen={isDetailsModalOpen} onClose={handleCloseDetailsModal} school={selectedSchool} />
-      <table className='tbl'>
+      <AddSchoolModal
+        isOpen={isAddSchoolModalOpen}
+        onClose={handleCloseAddSchoolModal}
+        onSubmit={handleSubmitSignup}
+      />
+      <SchoolDetailsModal
+        isOpen={isDetailsModalOpen}
+        onClose={handleCloseDetailsModal}
+        school={selectedSchool}
+      />
+      <table className="tbl">
         <thead>
           <tr>
             <th>#</th>
@@ -95,8 +104,12 @@ const SignupComponent = () => {
               <td>{school.registrationDate}</td>
               <td>{school.ContactInfo}</td>
               <td>{school.balance}</td>
-              <td>
-                <button onClick={() => handleOpenDetailsModal(school)}>View Details</button>
+              <td className="action-buttons">
+                <button onClick={() => handleOpenDetailsModal(school)}>
+                  View Details
+                </button>
+                
+                
               </td>
             </tr>
           ))}
