@@ -17,37 +17,8 @@
       "schoolName": "kim",
       "amountDue": "1000",
       "dueDate": "2024-05-31"
-    },
-    {
-      "id": null,
-      "schoolName": "tetu high",
-      "amountDue": "2345",
-      "dueDate": "2024-06-07"
-    },
-    {
-      "id": null,
-      "schoolName": "Nyeri High",
-      "amountDue": "234",
-      "dueDate": "2024-06-03"
-    },
-    {
-      "id": null,
-      "schoolName": "Nyeri High",
-      "amountDue": "23456",
-      "dueDate": "2024-05-22"
-    },
-    {
-      "id": null,
-      "schoolName": "wert",
-      "amountDue": "234",
-      "dueDate": "2024-05-30"
-    },
-    {
-      "id": "",
-      "schoolName": "ertfgy",
-      "amountDue": "2345",
-      "dueDate": "2024-05-08"
     }
+    
   ],
   "Schools": [
     {
