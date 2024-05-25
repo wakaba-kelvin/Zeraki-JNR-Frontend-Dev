@@ -1,59 +1,58 @@
-.schools {
-    padding: 20px;
-  }
-  
-  button {
-    margin-bottom: 20px;
-    background-color: #806677; 
-    border: none;
-    color: rgb(65, 236, 136);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #0056b3; 
-  }
-  
-  .tbl {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .tbl th,
-  .tbl td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-  
-  .tbl th {
-    background-color: #f2f2f2;
-    text-align: left;
-  }
-  
-  .tbl tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .tbl tr:hover {
-    background-color: #ddd;
-  }
-  
-  .action-buttons button {
-    margin-right: 5px;
-  }
-  
-  .action-buttons button.delete {
-    background-color: #dc3545; 
-  }
-  
-  .action-buttons button.delete:hover {
-    background-color: #c82333; 
-  }
-  
+.schools-container {
+  padding: 20px;
+}
+
+.schools-btn {
+  margin-bottom: 20px;
+  background-color: #9ddba7; 
+  border: none;
+  color: #f0f5f2;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.schools-btn:hover {
+  background-color: #0056b3; 
+}
+
+.schools-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.schools-table th,
+.schools-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.schools-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.schools-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.schools-table tr:hover {
+  background-color: #ddd;
+}
+
+.schools-action-buttons button {
+  margin-right: 5px;
+}
+
+.schools-view-details-btn {
+  background-color: #bcecb2; 
+}
+
+.schools-view-details-btn:hover {
+  background-color: #657deb; 
+}

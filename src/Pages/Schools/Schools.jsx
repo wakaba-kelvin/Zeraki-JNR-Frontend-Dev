@@ -40,7 +40,6 @@ const SignupComponent = () => {
     setIsDetailsModalOpen(false);
     setSelectedSchool(null);
   };
-  
 
   const handleSubmitSignup = async (formData) => {
     try {
@@ -65,8 +64,8 @@ const SignupComponent = () => {
   };
 
   return (
-    <div className="schools">
-      <button onClick={handleOpenAddSchoolModal}>Add School</button>
+    <div className="schools-container">
+      <button className="schools-btn" onClick={handleOpenAddSchoolModal}>Add School</button>
       <AddSchoolModal
         isOpen={isAddSchoolModalOpen}
         onClose={handleCloseAddSchoolModal}
@@ -77,7 +76,7 @@ const SignupComponent = () => {
         onClose={handleCloseDetailsModal}
         school={selectedSchool}
       />
-      <table className="tbl">
+      <table className="schools-table">
         <thead>
           <tr>
             <th>#</th>
@@ -104,12 +103,10 @@ const SignupComponent = () => {
               <td>{school.registrationDate}</td>
               <td>{school.ContactInfo}</td>
               <td>{school.balance}</td>
-              <td className="action-buttons">
-                <button onClick={() => handleOpenDetailsModal(school)}>
+              <td className="schools-action-buttons">
+                <button className="schools-view-details-btn" onClick={() => handleOpenDetailsModal(school)}>
                   View Details
                 </button>
-                
-                
               </td>
             </tr>
           ))}
