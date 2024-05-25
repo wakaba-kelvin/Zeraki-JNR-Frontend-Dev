@@ -1,18 +1,6 @@
 {
   "Invoice": [
     {
-      "id": "1",
-      "schoolName": "Example School",
-      "amountDue": "5000",
-      "dueDate": "2024-06-01"
-    },
-    {
-      "id": "2",
-      "schoolName": "Another School",
-      "amountDue": "10000",
-      "dueDate": "2024-07-01"
-    },
-    {
       "id": "3",
       "schoolName": "kimayo",
       "amountDue": "3",
@@ -22,12 +10,6 @@
       "id": "4",
       "schoolName": "Nyeri High",
       "amountDue": "150000",
-      "dueDate": "2024-05-31"
-    },
-    {
-      "id": "5",
-      "schoolName": "evanso",
-      "amountDue": "23444",
       "dueDate": "2024-05-31"
     },
     {

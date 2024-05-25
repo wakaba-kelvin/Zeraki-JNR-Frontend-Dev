@@ -9,6 +9,7 @@ const AddSchoolModal = ({ isOpen, onClose, onSubmit }) => {
   const [product, setProduct] = useState('');
   const [contactInfo, setContactInfo] = useState('');
   const [registrationDate, setRegistrationDate] = useState('');
+  const [collections, setCollections] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,7 +26,8 @@ const AddSchoolModal = ({ isOpen, onClose, onSubmit }) => {
           Cheques: cheques,
           Product: product,
           ContactInfo: contactInfo,
-          RegistrationDate: registrationDate
+          RegistrationDate: registrationDate,
+          Collections: collections // Add Collections field
         }),
       });
   
@@ -44,6 +46,7 @@ const AddSchoolModal = ({ isOpen, onClose, onSubmit }) => {
       setProduct('');
       setContactInfo('');
       setRegistrationDate('');
+      setCollections('');
   
       onClose();
     } catch (error) {
@@ -145,6 +148,18 @@ const AddSchoolModal = ({ isOpen, onClose, onSubmit }) => {
                   type="date"
                   value={registrationDate}
                   onChange={(e) => setRegistrationDate(e.target.value)}
+                  required
+                />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label">Collections</label>
+              <div className="control">
+                <input
+                  className="input"
+                  type="text"
+                  value={collections}
+                  onChange={(e) => setCollections(e.target.value)}
                   required
                 />
               </div>
