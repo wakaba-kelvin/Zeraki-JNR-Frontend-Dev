@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AddSchoolModal.css'; 
 
 const AddSchoolModal = ({ isOpen, onClose, onSubmit }) => {
   const [schoolName, setSchoolName] = useState('');
@@ -6,16 +7,48 @@ const AddSchoolModal = ({ isOpen, onClose, onSubmit }) => {
   const [type, setType] = useState('');
   const [cheques, setCheques] = useState('');
   const [product, setProduct] = useState('');
+  const [contactInfo, setContactInfo] = useState('');
+  const [registrationDate, setRegistrationDate] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onSubmit({ schoolName, county, type, cheques, product });
-    setSchoolName('');
-    setCounty('');
-    setType('');
-    setCheques('');
-    setProduct('');
-    onClose();
+    try {
+      const response = await fetch('http://localhost:3000/Schools', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          SchoolName: schoolName,
+          County: county,
+          Type: type,
+          Cheques: cheques,
+          Product: product,
+          ContactInfo: contactInfo,
+          RegistrationDate: registrationDate
+        }),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to add new school');
+      }
+  
+      const newSchool = await response.json();
+  
+      onSubmit(newSchool);
+  
+      setSchoolName('');
+      setCounty('');
+      setType('');
+      setCheques('');
+      setProduct('');
+      setContactInfo('');
+      setRegistrationDate('');
+  
+      onClose();
+    } catch (error) {
+      console.error('Error adding new school:', error);
+    }
   };
 
   return (
@@ -90,6 +123,30 @@ const AddSchoolModal = ({ isOpen, onClose, onSubmit }) => {
                   <option value="Zeraki Finance">Zeraki Finance</option>
                   <option value="Zeraki Timetable">Zeraki Timetable</option>
                 </select>
+              </div>
+            </div>
+            <div className="field">
+              <label className="label">Contact Info</label>
+              <div className="control">
+                <input
+                  className="input"
+                  type="text"
+                  value={contactInfo}
+                  onChange={(e) => setContactInfo(e.target.value)}
+                  required
+                />
+              </div>
+            </div>
+            <div className="field">
+              <label className="label">Registration Date</label>
+              <div className="control">
+                <input
+                  className="input"
+                  type="date"
+                  value={registrationDate}
+                  onChange={(e) => setRegistrationDate(e.target.value)}
+                  required
+                />
               </div>
             </div>
             <div className="field is-grouped">

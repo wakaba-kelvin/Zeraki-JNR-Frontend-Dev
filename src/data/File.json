@@ -1,62 +1,124 @@
 {
-  "Invoice": {
-    "Invoice": [
-      {
-        "id": 1,
-        "schoolName": "Example School",
-        "amountDue": "5000",
-        "dueDate": "2024-06-01"
-      },
-      {
-        "id": 2,
-        "schoolName": "Another School",
-        "amountDue": "10000",
-        "dueDate": "2024-07-01"
-      },
-      {
-        "id": 3,
-        "schoolName": "kimayo",
-        "amountDue": "3",
-        "dueDate": "2024-05-23"
-      },
-      {
-        "id": 4,
-        "schoolName": "Nyeri High",
-        "amountDue": "150000",
-        "dueDate": "2024-05-31"
-      },
-      {
-        "id": 5,
-        "schoolName": "evanso",
-        "amountDue": "23444",
-        "dueDate": "2024-05-31"
-      }
-    ]
-  },
-  "Schools": {
-    "Schools": [
-      {
-        "ID": 1,
-        "SchoolName": "Example School",
-        "Collections": 10000,
-        "Type": "Primary",
-        "County": "Example County",
-        "Product": "Standard",
-        "registrationDate": "2024-01-01",
-        "ContactInfo": "123456789",
-        "balance": "5000"
-      },
-      {
-        "ID": 2,
-        "SchoolName": "Another School",
-        "Collections": 20000,
-        "Type": "Secondary",
-        "County": "Another County",
-        "Product": "Premium",
-        "registrationDate": "2024-02-01",
-        "ContactInfo": "987654321",
-        "balance": "10000"
-      }
-    ]
-  }
+  "Invoice": [
+    {
+      "id": "1",
+      "schoolName": "Example School",
+      "amountDue": "5000",
+      "dueDate": "2024-06-01"
+    },
+    {
+      "id": "2",
+      "schoolName": "Another School",
+      "amountDue": "10000",
+      "dueDate": "2024-07-01"
+    },
+    {
+      "id": "3",
+      "schoolName": "kimayo",
+      "amountDue": "3",
+      "dueDate": "2024-05-23"
+    },
+    {
+      "id": "4",
+      "schoolName": "Nyeri High",
+      "amountDue": "150000",
+      "dueDate": "2024-05-31"
+    },
+    {
+      "id": "5",
+      "schoolName": "evanso",
+      "amountDue": "23444",
+      "dueDate": "2024-05-31"
+    },
+    {
+      "id": null,
+      "schoolName": "kim",
+      "amountDue": "1000",
+      "dueDate": "2024-05-31"
+    },
+    {
+      "id": null,
+      "schoolName": "tetu high",
+      "amountDue": "2345",
+      "dueDate": "2024-06-07"
+    },
+    {
+      "id": null,
+      "schoolName": "Nyeri High",
+      "amountDue": "234",
+      "dueDate": "2024-06-03"
+    },
+    {
+      "id": null,
+      "schoolName": "Nyeri High",
+      "amountDue": "23456",
+      "dueDate": "2024-05-22"
+    },
+    {
+      "id": null,
+      "schoolName": "wert",
+      "amountDue": "234",
+      "dueDate": "2024-05-30"
+    },
+    {
+      "id": "",
+      "schoolName": "ertfgy",
+      "amountDue": "2345",
+      "dueDate": "2024-05-08"
+    }
+  ],
+  "Schools": [
+    {
+      "ID": 1,
+      "SchoolName": "Example School",
+      "Collections": 10000,
+      "Type": "Primary",
+      "County": "Example County",
+      "Product": "Standard",
+      "registrationDate": "2024-01-01",
+      "ContactInfo": "123456789",
+      "balance": "5000",
+      "id": "3fa3"
+    },
+    {
+      "ID": 2,
+      "SchoolName": "Another School",
+      "Collections": 20000,
+      "Type": "Secondary",
+      "County": "Another County",
+      "Product": "Premium",
+      "registrationDate": "2024-02-01",
+      "ContactInfo": "987654321",
+      "balance": "10000",
+      "id": "4980"
+    },
+    {
+      "id": "a032",
+      "SchoolName": "werty",
+      "County": "wert",
+      "Type": "Secondary",
+      "Cheques": "dfh",
+      "Product": "Zeraki Analytics"
+    },
+    {
+      "id": "618a",
+      "SchoolName": "qwert",
+      "County": "esrdtf",
+      "Type": "Secondary",
+      "Cheques": "2334",
+      "Product": "Zeraki Analytics",
+      "ContactInfo": "12345678",
+      "RegistrationDate": "2024-05-31"
+    },
+    {
+      "id": "618a",
+      "SchoolName": "qwert",
+      "County": "esrdtf",
+      "Type": "Secondary",
+      "Cheques": "2334",
+      "Product": "Zeraki Analytics",
+      "ContactInfo": "12345678",
+      "RegistrationDate": "2024-05-31"
+    }
+  ]
 }

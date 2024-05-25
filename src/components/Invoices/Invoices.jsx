@@ -5,7 +5,7 @@ const Invoices = () => {
   const [invoices, setInvoices] = useState([]);
   const [isEditing, setIsEditing] = useState(false);
   const [currentInvoice, setCurrentInvoice] = useState({
-    id: null,
+    id: '',
     schoolName: '',
     amountDue: '',
     dueDate: ''
@@ -19,8 +19,9 @@ const Invoices = () => {
     try {
       const response = await fetch('http://localhost:3000/Invoice');
       const data = await response.json();
-      data.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
-      setInvoices(data);
+      const invoices = data.Invoice.Invoice; 
+      invoices.sort((a, b) => new Date(a.dueDate) - new Date(b.dueDate));
+      setInvoices(invoices);
     } catch (error) {
       console.error('Error fetching invoices:', error);
     }
@@ -43,7 +44,7 @@ const Invoices = () => {
       });
       const newInvoice = await response.json();
       setInvoices([...invoices, newInvoice]);
-      setCurrentInvoice({ id: null, schoolName: '', amountDue: '', dueDate: '' });
+      setCurrentInvoice({ id: '', schoolName: '', amountDue: '', dueDate: '' });
     } catch (error) {
       console.error('Error adding invoice:', error);
     }
@@ -67,7 +68,7 @@ const Invoices = () => {
       const updatedInvoice = await response.json();
       setInvoices(invoices.map(inv => (inv.id === updatedInvoice.id ? updatedInvoice : inv)));
       setIsEditing(false);
-      setCurrentInvoice({ id: null, schoolName: '', amountDue: '', dueDate: '' });
+      setCurrentInvoice({ id: '', schoolName: '', amountDue: '', dueDate: '' });
     } catch (error) {
       console.error('Error updating invoice:', error);
     }

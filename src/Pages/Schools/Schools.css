@@ -1,0 +1,33 @@
+.schools {
+    padding: 20px;
+  }
+  
+  button {
+    margin-bottom: 20px;
+  }
+  
+  .tbl {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tbl th,
+  .tbl td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .tbl th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .tbl tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .tbl tr:hover {
+    background-color: #ddd;
+  }
+  
