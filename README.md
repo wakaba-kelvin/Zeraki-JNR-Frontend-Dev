@@ -1,38 +1,29 @@
-# Sales Agent Dashboard
+# SalesDash
 
-![Dashboard Preview](dashboard-preview.png)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
-## Overview
+## Development server
 
-The Sales Agent Dashboard is a powerful tool designed to streamline operations for sales agents at Zeraki, enabling efficient management of school accounts, invoicing, collections, and data visualization for targets and sign-ups.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Features
+## Code scaffolding
 
-- **Side Navigation:** Navigate seamlessly through the application with a structured side navigation bar.
-- **Dashboard Module:** Get a comprehensive overview of key performance indicators with dynamic counters and data visualization.
-- **Schools Module:** Manage school-related data, including detailed school information, invoices, and collections.
-- **Targets Visualization:** Visualize progress towards signup targets with interactive pie charts.
-- **Signups Overview:** Analyze sign-ups across different school types and products using bar graphs.
-- **Upcoming Invoices:** Streamline payment collection with a list of upcoming invoices and quick actions for payment.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Installation
+## Build
 
-1. Clone the repository.
-2. Install dependencies with `npm install`.
-3. Run the development server with `ng serve --o`.
-4. Access the dashboard at `http://localhost:4200`.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Technologies Used
+## Running unit tests
 
-- Angular
-- TypeScript
-- HTML
-- CSS
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Contributing
+## Running end-to-end tests
 
-Contributions are welcome! Please follow the [contribution guidelines](CONTRIBUTING.md).
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## License
+## Further help
 
-This project is licensed under the [MIT License](LICENSE).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# angular-test
+# Zeraki-Angular-Dashboard
