@@ -1,7 +1,7 @@
 import {
   CommonModule,
   isPlatformBrowser
-} from "./chunk-V73NHFKA.js";
+} from "./chunk-DSBM6CW4.js";
 import {
   ChangeDetectionStrategy,
   Component,
@@ -30,9 +30,9 @@ import {
   ɵɵelementStart,
   ɵɵlistener,
   ɵɵstyleProp
-} from "./chunk-IIQ7TTAK.js";
+} from "./chunk-WJCWVEHP.js";
 
-// node_modules/.pnpm/@kurkle+color@0.3.2/node_modules/@kurkle/color/dist/color.esm.js
+// node_modules/@kurkle/color/dist/color.esm.js
 function round(v) {
   return v + 0.5 | 0;
 }
@@ -589,7 +589,7 @@ var Color = class _Color {
   }
 };
 
-// node_modules/.pnpm/chart.js@4.4.3/node_modules/chart.js/dist/chunks/helpers.segment.js
+// node_modules/chart.js/dist/chunks/helpers.segment.js
 function noop() {
 }
 var uid = /* @__PURE__ */ (() => {
@@ -2957,7 +2957,7 @@ function styleChanged(style, prevStyle) {
   return JSON.stringify(style, replacer) !== JSON.stringify(prevStyle, replacer);
 }
 
-// node_modules/.pnpm/chart.js@4.4.3/node_modules/chart.js/dist/chart.js
+// node_modules/chart.js/dist/chart.js
 var Animator = class {
   constructor() {
     this._request = null;
@@ -14320,11 +14320,11 @@ var registerables = [
   scales
 ];
 
-// node_modules/.pnpm/chart.js@4.4.3/node_modules/chart.js/auto/auto.js
+// node_modules/chart.js/auto/auto.js
 Chart.register(...registerables);
 var auto_default = Chart;
 
-// node_modules/.pnpm/primeng@17.17.0_@angular+common@17.3.10_@angular+core@17.3.10_@angular+forms@17.3.10_rxjs@7.8.1_zone.js@0.14.6/node_modules/primeng/fesm2022/primeng-chart.mjs
+// node_modules/primeng/fesm2022/primeng-chart.mjs
 var UIChart = class _UIChart {
   platformId;
   el;

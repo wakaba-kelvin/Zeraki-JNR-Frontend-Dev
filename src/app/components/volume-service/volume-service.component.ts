@@ -33,58 +33,14 @@ export class VolumeServiceComponent implements OnInit {
     };
 
     this.options = {
-      responsive: true,
-      maintainAspectRatio: false,
       plugins: {
-        tooltip: {
-          callbacks: {
-            label: (tooltipItem: any) => {
-              const datasetLabel = tooltipItem.dataset.label || '';
-              return `${datasetLabel}: ${tooltipItem.raw}`;
-            }
-          }
-        },
         legend: {
-          position: 'top',
           labels: {
             usePointStyle: true,
           },
-          onClick: (e, legendItem) => {
-            // Custom legend click behavior
-          },
-          onHover: (e, legendItem) => {
-            // Custom legend hover behavior
-          }
-        }
-      },
-      scales: {
-        x: {
-          stacked: true,
-          title: {
-            display: true,
-            text: 'Month',
-          },
-          ticks: {
-            color: '#333'
-          },
-          grid: {
-            color: 'rgba(255, 255, 255, 0.1)'
-          }
         },
-        y: {
-          stacked: true,
-          title: {
-            display: true,
-            text: 'Value',
-          },
-          ticks: {
-            color: '#333'
-          },
-          grid: {
-            color: 'rgba(255, 255, 255, 0.1)'
-          }
-        }
-      }
+      },
     };
   }
+
 }
